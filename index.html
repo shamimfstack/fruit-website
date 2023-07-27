@@ -105,7 +105,10 @@
       <!-- hero section -->
       <section class="mt-12">
         <div class="carousel w-full">
-          <div id="slide1" class="carousel-item relative w-full">
+          <div
+            id="slide1"
+            class="carousel-item relative w-full bg-center bg-cover"
+          >
             <img src="/images/banner1.png" class="w-full" />
             <div
               class="absolute flex justify-between items-center transform -translate-y-1/2 left-5 right-5 top-1/2"
@@ -203,7 +206,7 @@
           </div>
         </div>
         <div
-          class="px-12 py-16 bg-white max-w-5xl mx-auto flex flex-col lg:flex-row gap-24 relative -top-32 rounded-lg drop-shadow-md"
+          class="hidden lg:block px-12 py-16 bg-white max-w-5xl mx-auto flex flex-col lg:flex-row gap-24 relative -top-32 rounded-lg drop-shadow-md"
         >
           <div class="flex flex-col items-center">
             <img src="images/fruit1.png" alt="" />
@@ -266,7 +269,7 @@
         </div>
         <!-- offer items container -->
         <div
-          class="mt-12 flex flex-col justify-center lg:flex-row items-center gap-6"
+          class="mt-12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-center gap-6"
         >
           <!-- item 1 -->
           <div
@@ -485,7 +488,7 @@
       <!-- team section -->
       <section class="py-12">
         <div
-          class="hero min-h-screen rounded-lg"
+          class="hero min-h-screen rounded-lg bg-center bg-cover"
           style="background-image: url(images/banner1.png)"
         >
           <div class="hero-overlay bg-opacity-60 rounded-lg"></div>
@@ -907,7 +910,9 @@
         </p>
 
         <!-- container div -->
-        <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-between gap-8">
+        <div
+          class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-between gap-8"
+        >
           <!-- div 1 -->
           <div class="space-y-3 flex-1">
             <div class="flex">
@@ -932,7 +937,7 @@
               <div
                 class="w-6 h-6 p-5 bg-[#E7E7E7] rounded-full mr-4 flex justify-center items-center"
               >
-              <i class="fa-regular fa-heart fa-sm"></i>
+                <i class="fa-regular fa-heart fa-sm"></i>
               </div>
               <div class="space-y-2">
                 <h3 class="text-textPrimary text-2xl font-extrabold">
@@ -949,7 +954,7 @@
               <div
                 class="w-6 h-6 p-5 bg-[#E7E7E7] rounded-full mr-4 flex justify-center items-center"
               >
-              <i class="fa-solid fa-gift fa-sm"></i>
+                <i class="fa-solid fa-gift fa-sm"></i>
               </div>
               <div class="space-y-2">
                 <h3 class="text-textPrimary text-2xl font-extrabold">
@@ -974,7 +979,7 @@
                 <h3 class="text-textPrimary text-2xl font-extrabold">
                   Dedicated Team
                 </h3>
-                <hr class="w-24 " />
+                <hr class="w-24" />
                 <p class="text-textPrimary font-medium">
                   Professional employees are there for you to pick the most
                   amazing and fresh fruits.
@@ -983,7 +988,7 @@
               <div
                 class="w-6 h-6 p-5 bg-[#E7E7E7] rounded-full flex justify-center items-center"
               >
-              <i class="fa-solid fa-apple-whole fa-sm"></i>
+                <i class="fa-solid fa-apple-whole fa-sm"></i>
               </div>
             </div>
             <div class="flex">
@@ -1000,7 +1005,7 @@
               <div
                 class="w-6 h-6 p-5 bg-[#E7E7E7] rounded-full flex justify-center items-center"
               >
-              <i class="fa-solid fa-ice-cream fa-sm"></i>
+                <i class="fa-solid fa-ice-cream fa-sm"></i>
               </div>
             </div>
             <div class="flex">
@@ -1017,13 +1022,45 @@
               <div
                 class="w-6 h-6 p-5 bg-[#E7E7E7] rounded-full flex justify-center items-center"
               >
-              <i class="fa-regular fa-thumbs-up fa-sm"></i>
+                <i class="fa-regular fa-thumbs-up fa-sm"></i>
               </div>
             </div>
           </div>
         </div>
       </section>
     </main>
-    <footer></footer>
+    <!-- footer section -->
+    <footer
+      class="footer footer-center p-10 bg-black text-primary-content py-24 space-y-12"
+    >
+      <div class="">
+        <a class="btn btn-ghost normal-case text-xl"
+          ><img class="w-10" src="images/logo.png" alt="" /><span
+            class="text-white text-4xl font-bold"
+            >Fruit Burst</span
+          ></a
+        >
+      </div>
+      <div
+        class="space-x-4 lg:space-x-10 flex flex-wrap justify-center"
+      >
+        <a class="text-white text-lg font-semibold" href="#">Home</a>
+        <a class="text-white text-lg font-semibold" href="#">About Us</a>
+        <a class="text-white text-lg font-semibold" href="#">Shop</a>
+        <a class="text-white text-lg font-semibold" href="#">All Fruits</a>
+        <a class="text-white text-lg font-semibold" href="#">Support</a>
+        <a class="text-white text-lg font-semibold" href="#">My Account</a>
+      </div>
+      <div>
+        <div class="grid grid-flow-col gap-4">
+          <a href="#"><i class="fa-brands fa-twitter fa-lg"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook fa-lg"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube fa-lg"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in fa-lg"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram fa-lg"></i></a>
+          <a href="#"><i class="fa-brands fa-apple fa-lg"></i></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
